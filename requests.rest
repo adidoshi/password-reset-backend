@@ -1,0 +1,12 @@
+GET http://localhost:4000/api/private
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOGUwMWZjMTI2ZWEzNGJmODk0YWM1MSIsImlhdCI6MTYzNjcwMzMwNiwiZXhwIjoxNjM2NzAzOTA2fQ.qg384zfZ3dl0Vnuaa7wMgpolW7a_K5GaXHC_PMZKFqg
+
+###
+
+POST http://localhost:4000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "rahul@gmail.com",
+    "password": "rahul@123"
+}
