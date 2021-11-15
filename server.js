@@ -16,6 +16,10 @@ app.use(express.json());
 app.use(logger("tiny"));
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.send("Welcome to user auth -> reset password flow API");
+});
+
 // Routes
 const authRouter = require("./routes/auth");
 const privateRouter = require("./routes/private");
